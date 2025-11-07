@@ -14,7 +14,7 @@ function App() {
 
 
   //create a variable that is not used anywhere in the code
-  const unusedVariable = 'I am not used anywhere';
+  // const unusedVariable = 'I am not used anywhere';
   // Fetch tasks on component mount
   useEffect(() => {
     fetchTasks();
