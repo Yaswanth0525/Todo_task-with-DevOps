@@ -7,13 +7,14 @@ services:
       - ./server/.env
     ports:
       - "5000:5000"
-  frontend:
-    build: ./client
-    container_name: frontend-module
+  ffrontend:
+    build:
+      context: ./client
+      args:
+        VITE_API_URL: http://3.27.1.127:5000/api
+    container_name: frontend
     restart: always
-    env_file:
-      - ./client/.env
     ports:
       - "5173:5173"
     depends_on:
-      - backend 
+      - backend
