@@ -12,6 +12,9 @@ function App() {
   const [error, setError] = useState(null);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
+
+  //create a variable that is not used anywhere in the code
+  // const unusedVariable = 'I am not used anywhere';
   // Fetch tasks on component mount
   useEffect(() => {
     fetchTasks();
